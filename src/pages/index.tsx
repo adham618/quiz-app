@@ -68,7 +68,7 @@ export default function HomePage() {
           <section className='shadow-[10px 10px 42px 0px rgba(0, 0, 0, 0.75)] mx-auto mt-36 flex h-min min-h-[200px] w-[450px] rounded-2xl bg-[#252d4a] p-5 text-white'>
             <div className='grid w-full grid-cols-2 justify-between'>
               {showScore ? (
-                <div className='flex items-center text-2xl'>
+                <div className='col-span-2 m-auto flex items-center text-2xl'>
                   You scored {score} out of {questions.length}
                 </div>
               ) : (
@@ -86,7 +86,7 @@ export default function HomePage() {
                     {questions[currentQuestion].answerOptions.map(
                       (answerOption) => (
                         <button
-                          className='mb-2 flex w-full cursor-pointer items-center justify-start rounded-2xl border-4 border-[#234668] bg-[#252d4a] p-1 text-base text-white'
+                          className='mb-2 flex w-full cursor-pointer items-center justify-center rounded-2xl border-4 border-[#234668] bg-[#252d4a] p-1 text-base text-white'
                           key={answerOption.answerText}
                           onClick={() =>
                             handleAnswerOptionClick(answerOption.isCorrect)
