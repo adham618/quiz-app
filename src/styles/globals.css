@@ -49,7 +49,7 @@
 
   body,
   .p {
-    @apply font-primary text-sm md:text-base;
+    @apply h-full w-full bg-[#0c132c] font-primary text-sm md:text-base;
   }
   /* #endregion  /**======== Typography =========== */
 
